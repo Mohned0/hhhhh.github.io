@@ -1,0 +1,79 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  direction: ltr;
+  height: 100%;
+}
+
+#map {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+}
+
+header.centered {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  margin-bottom: 15px;
+}
+
+.projects {
+  max-width: 900px;
+  margin: auto;
+}
+
+.projects h2 {
+  text-align: center;
+  color: #58a6ff;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.project {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.project h3 {
+  color: #58a6ff;
+}
+
+.project-img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #8b949e;
+}

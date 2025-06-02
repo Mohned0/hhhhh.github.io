@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohaned Abdallh | GIS Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.css" rel="stylesheet"/>
+</head>
+<body>
+  <div id="map"></div>
+  <div class="overlay">
+    <header class="centered">
+      <img src="profile.jpg" alt="Mohaned Abdallh" class="profile-pic"/>
+      <h1>Mohaned Abdallh Musa</h1>
+      <p>GIS Specialist | Surveying Engineer | Riyadh, Saudi Arabia</p>
+      <p><strong>Email:</strong> mohnedabdllh@gmail.com | <strong>Phone:</strong> +966569849279</p>
+      <p><a href="http://www.linkedin.com/in/mohaned-abdallh" target="_blank">LinkedIn Profile</a></p>
+    </header>
+
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="project-list">
+
+        <div class="project">
+          <h3>NDVI Vegetation Analysis – Al Managel Area</h3>
+          <p>Generated NDVI maps to assess vegetation conditions using satellite imagery and ArcGIS tools during the flood season.</p>
+          <img src="ndvi_map.jpg" alt="NDVI Vegetation Map" class="project-img"/>
+        </div>
+
+        <div class="project">
+          <h3>COVID-19 GIS Dashboard for Sudan</h3>
+          <p>Built an interactive GIS-based dashboard to monitor and visualize COVID-19 case data across Sudan using Excel and ArcGIS Online.</p>
+        </div>
+
+        <div class="project">
+          <h3>Khartoum Public Transport Network Analysis</h3>
+          <p>GIS-based network analysis to assess and optimize routes using ArcGIS Network Analyst.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Mohaned Abdallh. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/dark-v11',
+      center: [39.8579, 21.3891],
+      zoom: 2,
+      interactive: false
+    });
+    map.on('load', () => map.resize());
+  </script>
+</body>
+</html>
