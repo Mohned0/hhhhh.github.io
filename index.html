@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Certificates & CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 20px 40px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #certificatesModal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+        }
+        .modal-content {
+            background-color: #111;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 700px;
+            color: white;
+            position: relative;
+        }
+        .modal-content img {
+            width: 90%;
+            max-width: 600px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #ccc;
+            font-size: 34px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Welcome to My Portfolio</h1>
+
+<!-- زر فتح الشهادات -->
+<button onclick="document.getElementById('certificatesModal').style.display='block'">
+   📄 View My Certificates
+</button>
+
+<!-- زر تنزيل السيرة الذاتية -->
+<a href="cv.pdf" download style="display: inline-block;">
+    <button>📥 Download My CV</button>
+</a>
+
+<!-- النافذة المنبثقة لعرض الشهادات -->
+<div id="certificatesModal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('certificatesModal').style.display='none'">&times;</span>
+    <h2 style="color:#4ea1f3;">My Certificates</h2>
+
+    <h3 style="margin-top:20px;">GIS, Mapping, and Spatial Analysis</h3>
+    <p><strong>Institution:</strong> University of Toronto (via Coursera)</p>
+    <p><strong>Date:</strong> December 21, 2024</p>
+    <p>
+      This specialization provided deep insights into Geographic Information Systems (GIS), including spatial data concepts,
+      geospatial analysis techniques, and map design principles. Tools used include ArcGIS Online, QGIS, and various remote sensing datasets.
+    </p>
+    <p>
+      Projects included: creating interactive maps for urban planning, analyzing spatial patterns in environmental data, and building
+      geodatabases for decision-making in disaster risk management.
+    </p>
+    <img src="certificates.jpg" alt="Certificate - GIS Specialization">
+
+    <h3 style="margin-top:30px;">Other Certificates</h3>
+    <img src="certificates2.jpg" alt="Certificate 2">
+    <img src="certificates3.jpg" alt="Certificate 3">
+
+    <p style="margin-top:15px;">
+      These certificates cover essential GIS workflows such as spatial data collection, satellite imagery interpretation,
+      and spatial modeling using LiDAR and remote sensing tools.
+    </p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Mohaned Abdallh. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
